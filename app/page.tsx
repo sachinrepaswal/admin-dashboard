@@ -3,7 +3,7 @@
 import { Card, Title, Text } from '@tremor/react';
 import Search from './search';
 import UsersTable from './table';
-import { useProductContext } from '../store/productContext';
+import { useProductContext } from '../store/ProductContext';
 
 interface Product {
   id: number;

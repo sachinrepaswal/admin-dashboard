@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import { useProductContext } from "../../store/productContext";
+import { useProductContext } from "../../store/ProductContext";
 import { Card, Metric, Text, Title, BarList, Flex, Grid } from '@tremor/react';
 
 
-export const page = () => {
+export const Page = () => {
     const { products, deleteProduct } = useProductContext();
     const [editingProduct, setEditingProduct] = useState<any>(null);
 
@@ -58,4 +58,4 @@ export const page = () => {
   );
 }
 
-export default page;
+export default Page;

@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import Nav from './nav';
 import Toast from './toast';
 import { Suspense } from 'react';
-import { ProductProvider } from '../store/productContext';
+import { ProductProvider } from '../store/ProductContext';
 
 export const metadata = {
   title: 'Next.js App Router + NextAuth + Tailwind CSS',
