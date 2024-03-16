@@ -13,9 +13,6 @@ This page allows users to manage product listings. Users can view, add, edit, an
 ### Orders Management
 The Orders Management page facilitates viewing and handling orders. Users can view a list of orders with details including order ID, customer name, order date, and status. Optionally, users can view order details, update order status, and delete orders.
 
-### (Optional) Orders Calendar View
-This feature provides a calendar interface displaying orders based on their expected delivery dates. It offers a visual representation of orders scheduled for various dates.
-
 ## Objectives
 - Develop a user-friendly interface for managing key business operations.
 - Utilize React for building modular components and managing application state efficiently.
