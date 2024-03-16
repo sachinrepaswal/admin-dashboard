@@ -1,58 +1,59 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/9113740/201498864-2a900c64-d88f-4ed4-b5cf-770bcb57e1f5.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/9113740/201498152-b171abb8-9225-487a-821c-6ff49ee48579.png">
-  <img alt="Shows all of the tools in the stack for this template, also listed in the README file." src="https://user-images.githubusercontent.com/9113740/201498152-b171abb8-9225-487a-821c-6ff49ee48579.png">
-</picture>
+# React ERP System
 
-<div align="center"><strong>Next.js 14 Admin Dashboard Template</strong></div>
-<div align="center">Built with the Next.js App Router</div>
-<br />
-<div align="center">
-<a href="http://admin-dash-template.vercel.sh/">Demo</a>
-<span> · </span>
-<a href="https://vercel.com/templates/next.js/admin-dashboard-tailwind-planetscale-react-nextjs">Clone & Deploy</a>
-<span>
-</div>
+This project is a simplified interface for an ERP (Enterprise Resource Planning) system, designed to efficiently manage basic business operations. It provides essential functionalities such as managing products and orders. The project is built using React, ensuring modularity and efficient state management.
 
-## Overview
+## Pages
 
-This is a starter template using the following stack:
+### Dashboard
+The Dashboard page offers an overview of key metrics and features of the ERP system. It serves as a central hub for accessing different functionalities.
 
-- Framework - [Next.js 14](https://nextjs.org/14)
-- Language - [TypeScript](https://www.typescriptlang.org)
-- Auth - [NextAuth.js](https://next-auth.js.org)
-- Database - [Vercel Postgres](https://vercel.com/postgres)
-- Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
-- Styling - [Tailwind CSS](https://tailwindcss.com)
-- Components - [Tremor](https://www.tremor.so)
-- Analytics - [Vercel Analytics](https://vercel.com/analytics)
-- Linting - [ESLint](https://eslint.org)
-- Formatting - [Prettier](https://prettier.io)
+### Products Management
+This page allows users to manage product listings. Users can view, add, edit, and delete products. Each product is displayed with details such as name, category, price, and stock quantity.
 
-This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, tests, and styles, component-level data fetching, and more.
+### Orders Management
+The Orders Management page facilitates viewing and handling orders. Users can view a list of orders with details including order ID, customer name, order date, and status. Optionally, users can view order details, update order status, and delete orders.
+
+### (Optional) Orders Calendar View
+This feature provides a calendar interface displaying orders based on their expected delivery dates. It offers a visual representation of orders scheduled for various dates.
+
+## Objectives
+- Develop a user-friendly interface for managing key business operations.
+- Utilize React for building modular components and managing application state efficiently.
+- Implement navigation between different sections of the ERP system using React Router.
+- Create a responsive design to ensure usability across desktop and mobile devices.
+
+## Assignment Details
+### Dashboard
+- Display summary metrics or features (e.g., total number of products, orders).
+- Include links or buttons for quick navigation to the Products and Orders management pages.
+
+### Products Management
+- Present a list of products with details such as name, category, price, and stock quantity, using mock data.
+- Enable functionalities to add, edit, and delete products.
+
+### Orders Management
+- Show a list of orders, including details like order ID, customer name, order date, and status, using mock data.
+- (Optional) Allow viewing of order details, updating the order status, and deletion of orders.
+
+## Usage
+To run the project locally:
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm start`.
+5. Open your browser and visit `http://localhost:3000` to view the application.
+
+## Contributing
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
 
 ## Getting Started
 
-During the deployment, Vercel will prompt you to create a new Postgres database. This will add the necessary environment variables to your project.
-
-Inside the Vercel Postgres dashboard, create a table based on the schema defined in this repository.
-
-```
-CREATE TABLE users (
-  id SERIAL PRIMARY KEY,
-  email VARCHAR(255) NOT NULL,
-  name VARCHAR(255),
-  username VARCHAR(255)
-);
-```
-
-Insert a row for testing:
-
-```
-INSERT INTO users (id, email, name, username) VALUES (1, 'me@site.com', 'Me', 'username');
-```
-
-Finally, run the following commands to start the development server:
+You need to run the following commands to start the development server:
 
 ```
 pnpm install
